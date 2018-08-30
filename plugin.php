@@ -12,6 +12,7 @@ function scs_product_schema() {
 $json_productSKU = $json_product->get_sku();
 $json_productTitle = $json_product->get_name();
 $json_description = $json_product->get_description();
+$json_description = _sanitize_text_fields( $json_description, false );
 $json_price = $json_product->get_price();
 $json_instockstatus = $json_product->get_stock_status();
 $json_brand=get_bloginfo( 'name' );
