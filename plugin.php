@@ -5,7 +5,7 @@ Description: Add product JSON schema
 Version: 1.1
 Author: John Wierenga
 */
-function scs_product_schema() {
+function jw_product_schema() {
 	if (is_product()){
 	$json_product = wc_get_product();
 	if ($json_product != null){
@@ -36,5 +36,5 @@ echo '<script type="application/ld+json">
 	}
 }
 }
-add_action("wp_footer", "scs_product_schema");
+add_action("wp_footer", "jw_product_schema");
 ?>
