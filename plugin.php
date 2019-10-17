@@ -2,8 +2,8 @@
 /*
 Plugin Name: Schema for WooCommerce
 Description: Add product JSON schema
-Version: 1.0
-Author: SCS Grand Rapids
+Version: 1.1
+Author: John Wierenga
 */
 function scs_product_schema() {
 	if (is_product()){
